@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<title>HTML 5</title>
+<style type="text/css">
+* { margin: 0; padding: 0; }
+#tela { background: #000000; border: 3px solid #cccccc; }
+</style>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+if(document.addEventListener){
+  window.addEventListener("load",function(){
+    window.removeEventListener("load",arguments.callee,false);
+    ignicao();
+  },false);
+}else if(window.attachEvent){
+  window.attachEvent("onload",function(){
+    ignicao();
+  });
+}
+</script>
+</head>
+<body>
+<canvas id="tela" width="1000" height="450">Sem suporte ao canvas do HTML 5.</canvas>
+<div id="info">
+<h4>Teclas</h4>
+<ul>
+<li><b>[N]</b> Cria uma nova nave.</li>
+<li><b>[WASD]</b> Navegação do jogador 1.</li>
+<li><b>[T]</b> Tiro do jogador 1.</li>
+<li><b>[↑→↓←]</b> Navegação do jogador 2.</li>
+<li><b>[END]</b> Tiro do jogador 2.</li>
+</ul>
+</div>
+</body>
+</html>
