@@ -1,5 +1,5 @@
 # JS Game for Studies
-HTML5 Game - Space Shooter
+HTML5 Game - Space Shooter ([demo](http://douglascarlini.com/files/github/learn-js-game/))
 
 # About
 I create this game in 2012 for improve my JavaScript skills.
